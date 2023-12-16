@@ -4,43 +4,110 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" 
-  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
   <link rel="stylesheet" href="css/project.css">
   <link rel="stylesheet" href="css/responsive.css">
   <title>new-project</title>
 </head>
+<style>
+     .header{
+      
+    
+            margin: 0 auto;
+            width:100%;
+            max-width: 1216px;
+            padding: 20px 0px 15px 0px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+     
+                  .header a{
+                    font-size: 26px;
+                    color: white;
+                    z-index: 999;
+                  }
+                  .navber a{
+                    font-size: 18px;
+                    margin-left: 20px;
+                  }
+                  .icons {
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    gap:20px;
+        
+                    right: 5px;
+                  }
+                  .icons i{
+                    font-size: 20px;
+                    color:#0C073D;
+      
+                   right:10px;
+           
+                
+                  }
+#close-btn{
+  display: none;
+}
+    #check{
+      display: none;
+    }  
+    #check:checked~.icons #menu-bar{ 
+      display: none;
+     } 
+     #check:checked~.icons #close-btn{ 
+  
+      display: block;
+    
+     }    
+     .navber-sec a{
+      color: #0C073D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    transition: all .3s ease-in-out;
+     }
+
+     .icons{
+      display: none;
+     }
+     .navber-sec{
+      display: flex;
+    gap: 33px;
+     }
+</style>
 <body>
-  <header class="header-section" id="top-button">
-    <div class="container">
-      <div class="main-header">
-        <div class="logo">
-          <a href="index.html">
-            <img src="img/Logo wrap.png" alt="">
-          </a>
-        </div>
+  
+  <header class="header" id="top-button">
+    <a href="file:///C:/Users/shami/Downloads/template--header/template--header/git/maps.html"><img src="img/Logo wrap.png" alt=""></a>
+  <input type="checkbox" name="" id="check">
+    <label for="check" class="icons">
+      <i class="fa fa-bars" id="menu-bar"></i>
+      <i class="fa fa-close" id="close-btn"></i>
+    </label>
 
-
-        <nav class="navber">
-              <ul class="menu-bar">
-                <li><a href="maps.html">Buy</a></li>
-                <li><a href="">Rent</a></li>
-                <li><a href="">Sell</a></li>
-                <li><a href="">Find agent</a></li>
-                <li><a href="">For Realtors</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Blog</a></li>
-              </ul>
-        </nav>
-
-        <div class="site-bar">
-          <div class="bar-icon"><img src="img/bar-icon.svg" alt=""></div>
-          <div class="man-icon"><img src="img/man-icon.png" alt=""></div>
-        </div>
+      <nav class="navber-sec">
+        <a href="file:///C:/Users/shami/Downloads/template--header/template--header/git/maps.html">Buy</a>
+        <a href="">Rent</a>
+        <a href="">Sell</a>
+        <a href="">Find agent</a>
+        <a href="">For Realtors</a>
+        <a href="">FAQ</a>
+        <a href="">About us</a>
+        <a href="">Blog</a>
       </div>
-    </div>
-  </header>
+      </nav>
+      <div class="site-bar">
+        <div class="bar-icon"><img src="img/bar-icon.svg" alt=""></div>
+        <div class="man-icon"><img src="img/man-icon.png" alt=""></div>
+      </div>
+</header> 
+
 
   <section class="banner-section">
 
@@ -533,7 +600,19 @@
 
           </div>
         </div>
+        <div class="take-box-itms">
+          <img src="img/featured1 (3).png" alt="" class="take-img1">
+          <div class="take-itms-overlay">
+            <img src="img/take-icon.png" alt="">
+            <h3>“todocasa made my home buying easier than I ever could have imagined”</h3>
 
+            <div class="take-itms-name">
+              <span>Chris & Anna</span>
+              <p>Bought a house in San Pedro</p>
+            </div>
+
+          </div>
+        </div>
         <div class="take-box-itms">
           <img src="img/take1.png" alt="" class="take-img1">
           <div class="take-itms-overlay take-box-itms-blue">
